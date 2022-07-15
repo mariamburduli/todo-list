@@ -7,9 +7,7 @@ let counter = 0;
 addButton.addEventListener("click", function (e) {
   if (!addInput.value) return;
 
-  if (document.getElementById("addInput").value.length === "") {
-    alert("empty");
-  }
+
   let li = document.createElement("li");
   li.innerText = addInput.value;
   list.appendChild(li);
